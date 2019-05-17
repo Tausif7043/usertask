@@ -1,0 +1,26 @@
+{
+  "name": "usermangement",
+  "version": "1.0.0",
+  "description": "User Mangement",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scrap": "node cron.js"
+  },
+  "author": "Tausif S",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cors": "^2.8.5",
+    "cron": "^1.7.1",
+    "express": "^4.16.4",
+    "express-jwt": "^5.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.24.0",
+    "mongoose": "^5.4.19",
+    "password-hash": "^1.2.2",
+    "q": "^1.5.1",
+    "underscore": "^1.9.1",
+    "validator": "^10.11.0"
+  }
+}
