@@ -3,7 +3,6 @@ const _= require('underscore');
 const fs = require('fs');
 
 module.exports = function(req, res) { 
-    console.log('inside')
     let fileName = require('path').resolve(__dirname) + '/avatar/' + req.params.userid + '.png';
     if (!fs.existsSync(fileName)) {
         return response(res, {msg: "File not present"}, "File Deleted Successfully", 404);
