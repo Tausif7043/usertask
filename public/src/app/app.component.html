@@ -1,0 +1,6 @@
+<app-header *ngIf="showHeader"></app-header>
+<div class="body-wrapper">
+  <app-sidebar *ngIf="showSidebar"></app-sidebar>
+  <router-outlet></router-outlet>
+</div>
+<app-footer *ngIf="showFooter"></app-footer>

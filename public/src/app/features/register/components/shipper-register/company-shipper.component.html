@@ -1,0 +1,146 @@
+<form [formGroup]="companyRegForm" class="shipper-form" role="form">
+    <h3> Company Details</h3>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Company Name *" formControlName="company_name">
+                <error-display [control]="companyRegForm.controls['company_name']"></error-display>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Company Address *" formControlName="address">
+                <error-display [control]="companyRegForm.controls['address']"></error-display>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Company Type *" formControlName="company_type">
+                <error-display [control]="companyRegForm.controls['company_type']"></error-display>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Service Tax no" formControlName="service_tax_no">
+                <error-display [control]="companyRegForm.controls['service_tax_no']"></error-display>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Pan no *" formControlName="pan_no">
+                <error-display [control]="companyRegForm.controls['pan_no']"></error-display>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Website" formControlName="website">
+                <error-display [control]="companyRegForm.controls['website']"></error-display>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Name *" formControlName="name">
+                <error-display [control]="companyRegForm.controls['name']"></error-display>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email *" formControlName="email">
+                <error-display [control]="companyRegForm.controls['email']"></error-display>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Mobile no" formControlName="contact_no">
+                <error-display [control]="companyRegForm.controls['contact_no']"></error-display>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Std Code*" formControlName="std_code">
+                        <error-display [control]="companyRegForm.controls['std_code']"></error-display>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Landline*" formControlName="landline_no">
+                        <error-display [control]="companyRegForm.controls['landline_no']"></error-display>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Enter your password *" formControlName="password">
+                <error-display [control]="companyRegForm.controls['password']"></error-display>
+
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Comfirm Password *" formControlName="confirm_password">
+                <error-display [control]="companyRegForm.controls['confirm_password']"></error-display>
+
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+
+        </div>
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <select class="form-control selectgender" formControlName="gender">
+                    <option value="" disabled>Select Gender</option>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                    <option value="O">Other</option>
+                </select>
+                <error-display [control]="companyRegForm.controls['gender']"></error-display>
+            </div>
+        </div>
+
+
+    </div>
+
+    <h3 style="margin-top: 30px;">Details</h3>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group files">
+                <input type="file" class="form-control">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group files files-tow">
+                <input type="files" class="form-control">
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="form-group ">
+                <div class="Terms_service">
+                    <input type="checkbox" id="term_servies">
+                    <label for="term_servies">I accept Terms of service and Privacy Policy</label>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group text-right">
+                <button class="btn">submit</button>
+            </div>
+        </div>
+    </div>
+</form>

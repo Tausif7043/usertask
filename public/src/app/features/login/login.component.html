@@ -1,0 +1,50 @@
+<div class="login-background">
+    <div class="login-bg-overlay"></div>
+    <div class="login-container">
+        <div class="login-left">
+            <div class="login-logo">
+                <img src="assets/images/logo.jpg" alt="">
+            </div>
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <h2>Login</h2>
+                <div class="form-group">
+                    <input type="text" placeholder="Email" class="form-control" formControlName="email">
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" class="form-control" formControlName="password">
+                </div>
+                <div class="form-group">
+                    <button class="btn">Submit</button>
+                </div>
+
+                <div class="login-register-text">
+                    <!-- <a href="forgotpassword.html">Forgot Password?</a> -->
+                    <a routerLink="/forget-password">Forgot Password?</a>
+                    <!-- <span>Don't have an account?
+                        <!-- <a href="register.html">Register Now</a> -->
+                    <!-- <a routerLink="/register/shipper">Shipper</a>
+                        <a routerLink="/register/trans">Transporters</a>
+                    </span> -->
+                </div>
+            </form>
+        </div>
+        <div class="login-right">
+            <div class="user_register">
+                <h3>
+                    <span>Join Now</span>
+                </h3>
+                <ul class="nav nav-tabs nav-stacked">
+                    <li>
+                        <a routerLink="/register/shipper">As a Shipper</a>
+                    </li>
+                    <li>
+                        <a routerLink="/register/trans">As a Transporter</a>
+
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="login-right-overaly"></div> -->
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,114 @@
+<form [formGroup]="individualRegForm" class="shipper-form" role="form">
+    <h3>User Details</h3>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Name *" formControlName="name">
+                <error-display [control]="individualRegForm.controls['name']"></error-display>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email *" formControlName="email">
+                <error-display [control]="individualRegForm.controls['email']"></error-display>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Enter your password *" formControlName="password">
+                <error-display [control]="individualRegForm.controls['password']"></error-display>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Confirm Password *" formControlName="confirm_password">
+                <error-display [control]="individualRegForm.controls['confirm_password']"></error-display>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Enter your Mobile No." formControlName="contact_number">
+                <error-display [control]="individualRegForm.controls['contact_number']"></error-display>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <select class="form-control selectgender" formControlName="gender">
+                    <option value="" disabled>Select Gender</option>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                    <option value="O">Other</option>
+                </select>
+                <error-display [control]="individualRegForm.controls['gender']"></error-display>
+            </div>
+        </div>
+    </div>
+
+    <h3 style="margin-top: 30px;">Other Details</h3>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="file-upload">
+                <app-file-upload dragRegionText="Drag and drop a file or Upload Adhar Id*" labelText="Upload Adhar Id" formControlName="aadhar"></app-file-upload>
+            </div>
+            <!-- [progress]="progress" -->
+            <!-- <div class="file-upload">
+                <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Upload Adhar Id</button>
+                <div class="image-upload-wrap">
+                    <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                    <div class="drag-text">
+                        <img src="https://image.flaticon.com/icons/svg/130/130993.svg">
+                        <h3>Drag and drop a file or Upload Adhar Id*</h3>
+                    </div>
+                </div>
+                <div class="file-upload-content">
+                    <img class="file-upload-image" src="#" alt="your image" />
+                    <div class="image-title-wrap">
+                        <button type="button" onclick="removeUpload()" class="remove-image">Remove
+                            <span class="image-title">Uploaded Image</span>
+                        </button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+        <div class="col-sm-6">
+            <div class="file-upload">
+                <app-file-upload dragRegionText="Drag and drop a file or Upload Profile Image*" labelText="Upload Profile Image" formControlName="profile_image"></app-file-upload>
+                <!-- <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Upload Profile Image</button>
+                <div class="image-upload-wrap"> 
+                    <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                    <div class="drag-text">
+                        <img src="https://image.flaticon.com/icons/svg/130/130993.svg">
+                        <h3>Drag and drop a file or Upload Profile Image*</h3>
+                    </div>
+                </div>
+                <div class="file-upload-content">
+                    <img class="file-upload-image" src="#" alt="your image" />
+                    <div class="image-title-wrap">
+                        <button type="button" onclick="removeUpload()" class="remove-image">Remove
+                            <span class="image-title">Uploaded Image</span>
+                        </button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="form-group ">
+                <div class="Terms_service">
+                    <input type="checkbox" id="term_servies">
+                    <label for="term_servies">I accept Terms of service and Privacy Policy</label>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group text-right">
+                <button class="btn" type='button' (click)="onIndividualRegSubmit()">submit</button>
+            </div>
+        </div>
+    </div>
+</form>
