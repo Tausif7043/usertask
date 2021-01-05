@@ -11,7 +11,7 @@
   "author": "Tausif S",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "cors": "^2.8.5",
     "cron": "^1.7.1",
     "dotenv": "^8.2.0",
